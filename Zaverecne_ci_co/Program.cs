@@ -22,6 +22,7 @@ namespace Zaverecne_ci_co
             this.Jmeno = Jmeno;
             this.Prijmeni = Prijmeni;
             this.Bydliste = Bydliste;
+            this.RodneCislo = RodneCislo;
             this.PocetOdpracovanychHodin = PocetOdpracovanychHodin;
         }
 
@@ -36,6 +37,7 @@ namespace Zaverecne_ci_co
         {
             this.Jmeno = Jmeno;
             this.Prijmeni = Prijmeni;
+            this.RodneCislo= RodneCislo;
             this.Bydliste = Bydliste;
             this.PocetOdpracovanychHodin = PocetOdpracovanychHodin;
             this.PocetLetPraxe = PocetLetPraxe;
