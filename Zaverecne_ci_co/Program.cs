@@ -68,8 +68,11 @@ namespace Zaverecne_ci_co
 
         public static void Mzdy()
         {
-            Console.WriteLine("Zadejte hodinovou sazbu: ");
+            Console.WriteLine("Zadejte hodinovou sazbu zaměstnanců: ");
             double hodinovaSazba = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Zadejte hodinovou sazbu brigadníků: ");
+            double hodinovaSazbaB = double.Parse(Console.ReadLine());
 
             evidence.OrderBy(v => v.Prijmeni);
             foreach(Osoba pracovnik in evidence)
@@ -83,7 +86,7 @@ namespace Zaverecne_ci_co
                 else if (pracovnik is Brigadnik)
                 {
                     Brigadnik brigadnik = (Brigadnik)pracovnik;
-                    double cistaMzda = brigadnik.VypocetMzdy(hodinovaSazba);
+                    double cistaMzda = brigadnik.VypocetMzdy(hodinovaSazbaB);
                     Console.WriteLine($"{brigadnik.Jmeno} {brigadnik.Prijmeni}: {cistaMzda}");
                 }
 
